@@ -50,7 +50,7 @@ class _ContactFormState extends State<ContactForm> {
    _submitForm() {
     // Validate returns true if the form is valid, or false
     // otherwise.
-    if (_formKey.currentState!.validate()) {
+    if (_formKey.currentState.validate()) {
       // If the form is valid, proceed.
       FeedbackForm feedbackForm = FeedbackForm(
           nameController.text,
@@ -111,14 +111,18 @@ class _ContactFormState extends State<ContactForm> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
+
         height: MediaQuery.of(context).size.height*0.67,
         child: Scaffold(
+
+
           backgroundColor: Colors.white,
           key: _scaffoldKey,
           resizeToAvoidBottomInset: false,
 
           body: Center(
             child: Container(
+
               height: MediaQuery.of(context).size.height,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -134,7 +138,7 @@ class _ContactFormState extends State<ContactForm> {
                             TextFormField(
                               controller: nameController,
                               validator: (value) {
-                                if (value!.isEmpty) {
+                                if (value.isEmpty) {
                                   return 'Enter Valid Name';
                                 }
                                 return null;
@@ -146,20 +150,22 @@ class _ContactFormState extends State<ContactForm> {
                             TextFormField(
                               controller: emailController,
                               validator: (value) {
-                                if (!value!.contains("@")) {
+                                if (!value.contains("@")) {
                                   return 'Enter Valid Email';
                                 }
                                 return null;
                               },
                               keyboardType: TextInputType.emailAddress,
                               decoration: const InputDecoration(
+                                  alignLabelWithHint: true,
+
                                   labelText: 'Email'
                               ),
                             ),
                             Row(
                               children: [
                                 SizedBox(
-                                  width: 60,
+                                  width: MediaQuery.of(context).size.width*.15,
                                   height: 60,
                                   child: TextFormField(
 
@@ -176,12 +182,12 @@ class _ContactFormState extends State<ContactForm> {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8.0),
                                   child: SizedBox(
-                                    width: 300,
+                                    width: MediaQuery.of(context).size.width*.7,
                                     height: 60,
                                     child: TextFormField(
                                       controller: mobileNoController,
                                       validator: (value) {
-                                        if (value!
+                                        if (value
                                             .trim()
                                             .length != 10) {
                                           return 'Enter 10 Digit Mobile Number';
@@ -200,7 +206,7 @@ class _ContactFormState extends State<ContactForm> {
                             TextFormField(
                               controller: ageController,
                               validator: (value) {
-                                if (value!.isEmpty) {
+                                if (value.isEmpty) {
                                   return 'Enter Valid Age';
                                 }
                                 return null;

@@ -24,7 +24,7 @@
         </intent>
     </queries>
    <application
-        android:label="rosaapp"
+        android:label="Rosa Groups"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

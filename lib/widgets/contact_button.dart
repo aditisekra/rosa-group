@@ -4,11 +4,13 @@ import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:rosaapp/rosa_icons_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../screens/contactPage.dart';
+
 class RosaButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String? encodeQueryParameters(Map<String, String> params) {
+    String encodeQueryParameters(Map<String, String> params) {
       return params.entries
           .map((e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
           .join('&');
@@ -23,7 +25,7 @@ class RosaButton extends StatelessWidget {
       }),
     );
     return SpeedDial(
-      icon: Icons.add,
+      animatedIcon: AnimatedIcons.add_event,
       // label: Text('contact'.tr),
       animatedIconTheme: const IconThemeData(size: 28.0),
       overlayColor: Colors.black38.withOpacity(0.2),
@@ -71,7 +73,8 @@ class RosaButton extends StatelessWidget {
             backgroundColor: Colors.black,
 
 
-            onTap: () => {launch("tel://+918556866987")}
+            onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactPage()),)}
+
         ),
       ],
     );

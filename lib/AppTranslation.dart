@@ -391,7 +391,49 @@ Our means of Transit
     • Air freight (Max Duration: 7 to 8 days)
     • Container (Max Duration: 40 to 50 days)
     • Customs clearance including
+''',
+      'genprocedure' :  '''We offer you our services by facilitating the purchase from India.
+By being at home, place your orders for items of all kinds found from the sites
+Indians.
+We will take care of the purchase and transportation for you.
+The transport is on 3 tracks:
+1)Air: Order your items and receive them within 10 days with ease and reliability.
+2)Maritime: Order your items and receive them within 10 weeks.
+3)Land: Once the package has arrived, you can be delivered or shipped at your own expense.
+You would no longer need to spend large sums of money on lodging fees, airfare to go to India.
+Buy in India directly without moving with us. We are your eyes and ears in India.
+We offer you a huge range of products available in India (spare parts, industrial machinery, cosmetics etc.) you would just be spoilt for choice with us.
+
+We ship your packages by plane or boat according to your wishes and the quality of your merchandise.
+
+Buy directly in India without moving lying at home by quality product specialists at the height of a quality clientele.
+
+Your Satisfaction is our duty! 
+Now is the time to invest, get into business!
+''',
+  'genfaq':'''Who are we?
+Rosa Groups is a multi-domain corporate citizen at your disposal to satisfy your requests.
+
+Where is Rosa Groups located?
+Rosa Groups LLC is created and managed from the USA. It is assisted by its branches Rosa Services Pvt ltd in India, Rosa Services SARL in Cameroon and many partner companies in the Democratic Republic of the Congo, Congo, Gabon, Equatorial Guinea and Chad.
+
+How to order in India?
+For any order, we offer you the best in the market according to your wallet.
+
+How do I make my payment?
+Your payments are made to our partner branches through a bank deposit in our accounts that will be indicated to you, against deposit receipt.
+You will only have to scan your receipt and then we will start the process of your order.
+
+How do I receive my order?
+You don’t need to move. Your parcel will be delivered to your home according to your request.
+
+What are the delivery times?
+Deliveries are made on 3 routes:
+1)Air: Order your items and receive them within 10 days 
+2)Maritime: Order your items and receive them within 10 weeks.
+3)Land: Once the package arrives, you have the option to be delivered or shipped at your own expense.
 '''
+
 };
 
 final Map<String, String> fr = {
@@ -800,5 +842,45 @@ Bagages Accompagnés (Durée Max 2 à 3jours)
 Frets aériens (Durée Max: 7 à 8 jours)
 Conteneur (Durée Max: 40 à 50jours)
 Dédouanement y compris
-'''
+''',
+  'genprocedure':'''Nous vous offrons nos services en vous facilitant l’achat depuis l’Inde.
+En étant chez vous, passez vos commandes d'articles de toute nature trouvée depuis les sites
+indiens.
+Nous nous chargerons de l'achat et du transport pour vous.
+Le transport s'effectue sur 3 voies :
+1)Aérienne: Commander vos articles et recevez-les dans un délai de 10 jours en toute simplicité et fiabilité.
+2)Maritime: Commander vos articles et recevez-les dans un délai de 10 semaines.
+3)Terrestre: une fois le colis arrivé, vous avez la possibilité d’être livrées ou qu’on expédie à vos frais.
+Vous n'auriez plus besoin de dépenser de grosses sommes somme d'argent en frais de logement, billet d'avion pour aller en Inde.
+Acheter en Inde directement sans se déplacer avec nous .Nous sommes vos yeux et oreilles en Inde.
+Nous vous proposons une énorme gamme de produits disponibles en Inde ( pièces détachés, machines industrielles, produits cosmétiques etc.) vous auriez juste l'embarras de choix avec nous.
+
+Nous expédions vos colis par avion ou bateau selon vos désirs et la qualité de votre marchandise.
+
+Acheter directement  en Inde sans vous déplacer étant couché chez vous par des spécialistes de produits de qualité à la hauteur d'une clientèle de qualité.
+
+Votre Satisfaction est notre devoir ! 
+C'est le moment d'investir,lancez-vous dans le business!
+''',
+  'genfaq':'''Qui sommes-nous?
+Rosa Groupes est une entreprise citoyenne multi domaines à votre disposition pour satisfaire à vos demandes.
+
+Où est située Rosa Groups?
+Rosa Groups LLC est créée et géré depuis les USA. Elle est assistée de ses branches Rosa Services Pvt ltd en Inde, Rosa Services SARL au Cameroun et de nombreuses entreprises partenaires en République démocratique du Congo, au Congo, au Gabon, en Guinée Équatoriale et au Tchad.
+
+Comment commander en Inde?
+Pour toute commande, nous vous offrons ce qu’il y a de meilleur dans le marché en fonction de votre porte-monnaie.
+
+Comment effectuer mon paiement?
+Vos paiements sont effectué auprès de nos branches partenaires au travers d’un dépôt bancaire dans nos comptes qui vous seront indiqués, contre reçu de dépôt.
+Vous n’aurez qu’à scanner votre reçu et dès lors nous déclenchons le processus de votre commande.
+
+Comment recevoir ma commande?
+Vous n’avez pas besoin de vous déplacer. Votre colis vous sera livré à domicile selon votre demande.
+
+Quelles sont les durées de livraisons?
+Les livraisons s'effectuent sur 3 voies :
+1)Aérienne: Commander vos articles et recevez-les dans un délai de 10 jours 
+2)Maritime: Commander vos articles et recevez-les dans un délai de 10 semaines.
+3)Terrestre: une fois le colis arrive, vous avez la possibilité d’être livre ou qu’on expédie à vos frais.'''
 };

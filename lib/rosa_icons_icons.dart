@@ -35,7 +35,7 @@ class RosaIcons {
   RosaIcons._();
 
   static const _kFontFam = 'RosaIcons';
-  static const String? _kFontPkg = null;
+  static const String _kFontPkg = null;
 
   static const IconData mail = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData call = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);

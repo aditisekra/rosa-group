@@ -17,7 +17,7 @@ Future<void> main() async {
   ));
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-   int? isviewed = prefs.getInt('onBoard');
+   int isviewed = prefs.getInt('onBoard');
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
@@ -31,8 +31,10 @@ Future<void> main() async {
       locale: Get.deviceLocale,
 
     fallbackLocale: const Locale('en','US'),
-    // home: isviewed != 0 ? OnBoard() : HomeScreen(),
-    home: OnBoard()
+    home:  HomeScreen(),
+
+
+
 
 
   ));
