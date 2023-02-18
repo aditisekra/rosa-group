@@ -39,6 +39,7 @@ class _BuildAppBarState extends State<BuildAppBar> {
 
               });
             },
+
             activeThumbImage: const AssetImage('assets/images/France-Flag-Round-Image.png'),
             inactiveThumbImage: const AssetImage('assets/images/1024px-United-states_flag_icon_round.svg.png'),
 

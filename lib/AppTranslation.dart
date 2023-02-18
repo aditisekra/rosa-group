@@ -8,9 +8,25 @@ abstract class AppTranslation {
 }
 
 final Map<String, String> enUS = {
-  'intro1' : 'Hello, How can we help you?',
-  'intro2' : 'kindly choose a service',
+  'BMI Calculator':"BMI Calculator",
+  'MALE':"MALE",
+  'FEMALE':"FEMALE",
+  'HEIGHT':"HEIGHT",
+  'CM':"CM",
+  'WEIGHT':"WEIGHT",
+  'AGE':"AGE",
+  'intro1' : 'HELLO,',
+  'intro2' : ' How can we help you?',
   'contact' : 'Contact Us',
+  'photos_tab': 'Photos',
+  'get_price': 'Get Estimated Cost',
+  'about_tab': 'About',
+  'procedure_tab': 'Procedure',
+  'faq_tab': 'FAQ',
+  'callback':'SCHEDULE A PHONE CALL',
+  'partners_tab': 'Partners',
+  'get_price_text': 'These are estimated prices we highly recommend you to schedule a call to get proper details about your medical condition',
+
 
   'MedHeading': 'Medical Services',
 
@@ -437,10 +453,25 @@ Deliveries are made on 3 routes:
 };
 
 final Map<String, String> fr = {
-  'intro1' : 'Bonjour, Comment pouvons-nous vous aider ?',
-  'intro2' : 'veuillez choisir un service',
+'BMI Calculator':'Calculateur BMI',
+'MALE': 'MASCULIN',
+'FEMALE':'FEMELLE',
+'HEIGHT':'LA TAILLE',
+'CM':  'CM',
+'WEIGHT': 'MASSE',
+'AGE': 'ÂGE',
+  'intro1' : 'BONJOUR, ',
+  'intro2' : 'Comment pouvons-nous vous aider ?',
   'contact' : 'Nous contacter',
   'MedHeading': 'Services médicaux',
+  'photos_tab': 'Photos',
+  'get_price': 'Obtenir un coût estimé',
+  'about_tab': 'À propos de',
+  'procedure_tab': 'Procédure',
+  'faq_tab': 'FAQ',
+  'partners_tab': 'Les partenaires',
+  'callback':'PRENDRE UN APPEL TÉLÉPHONIQUE',
+  'get_price_text': 'Ce sont des prix estimés, nous vous recommandons fortement de planifier un appel pour obtenir des détails appropriés sur votre état de santé.',
 
   'MedText': '''Rosa Services est une ressource ouverte, indépendante et enthousiaste pour les patients et les prestataires de l'industrie. et le tourisme de santé et nous avons un vaste réseau mondial d'hôpitaux, de cliniques, de centres de diagnostic et de centres médicaux certifiés populaires. Notre vision est de faciliter les derniers forfaits médicaux offerts par divers partenaires avec une idée commune de promouvoir des services de santé de haute qualité aux patients dans un environnement mondial.\n\n
 Nous fournissons des services de santé aux particuliers, aux familles, aux entreprises, aux bureaux gouvernementaux, aux institutions, aux employés, et négocions même les prix globaux selon les tarifs industriels standard et les demandes des clients.\n

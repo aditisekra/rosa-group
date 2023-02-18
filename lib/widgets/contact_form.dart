@@ -116,7 +116,7 @@ class _ContactFormState extends State<ContactForm> {
         child: Scaffold(
 
 
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           key: _scaffoldKey,
           resizeToAvoidBottomInset: false,
 
@@ -136,6 +136,7 @@ class _ContactFormState extends State<ContactForm> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             TextFormField(
+                              style: TextStyle(color: Colors.white),
                               controller: nameController,
                               validator: (value) {
                                 if (value.isEmpty) {
@@ -143,23 +144,60 @@ class _ContactFormState extends State<ContactForm> {
                                 }
                                 return null;
                               },
-                              decoration: const InputDecoration(
-                                  labelText: 'Name'
-                              ),
-                            ),
-                            TextFormField(
-                              controller: emailController,
-                              validator: (value) {
-                                if (!value.contains("@")) {
-                                  return 'Enter Valid Email';
-                                }
-                                return null;
-                              },
-                              keyboardType: TextInputType.emailAddress,
-                              decoration: const InputDecoration(
-                                  alignLabelWithHint: true,
+                              decoration: InputDecoration(
+                                focusColor: Color(0xFF27FF91),
+                                  labelText: 'Name',
+                                hintText: "Name",
+                                labelStyle: TextStyle(color: Colors.white),
 
-                                  labelText: 'Email'
+                                hintStyle: TextStyle(color: Colors.white),
+
+                                  border: UnderlineInputBorder(
+                                    borderRadius: BorderRadius.circular(80),
+                                    borderSide: BorderSide(width: 1, color: Color(0xFF27FF91)),
+
+                                  ),
+                                  enabledBorder: UnderlineInputBorder(
+                                      borderSide: BorderSide(color: Colors.white,width: 1)
+                                  )
+
+                              ),
+
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: TextFormField(
+                                style: TextStyle(color: Colors.white),
+                                controller: emailController,
+                                validator: (value) {
+                                  if (!value.contains("@")) {
+                                    return 'Enter Valid Email';
+                                  }
+                                  return null;
+                                },
+                                keyboardType: TextInputType.emailAddress,
+                                decoration:  InputDecoration(
+                                  enabled: true,
+                                    alignLabelWithHint: true,
+
+                                    labelText: 'Email',
+                                    focusColor: Color(0xFF27FF91),
+
+
+                                  hintText: "Email",
+                                  hintStyle: TextStyle(color: Colors.white),
+
+                                    labelStyle: TextStyle(color: Colors.white),
+                                    border: UnderlineInputBorder(
+                                      borderRadius: BorderRadius.circular(80),
+                                      borderSide: BorderSide(width: 1, color: Color(0xFF27FF91)),
+
+                                    ),
+
+                                    enabledBorder: UnderlineInputBorder(
+                                        borderSide: BorderSide(color: Colors.white,width: 1)
+                                    )
+                                ),
                               ),
                             ),
                             Row(
@@ -168,52 +206,102 @@ class _ContactFormState extends State<ContactForm> {
                                   width: MediaQuery.of(context).size.width*.15,
                                   height: 60,
                                   child: TextFormField(
+                                    style: TextStyle(color: Colors.white),
+
 
                                     controller: countryController,
 
                                     keyboardType: const TextInputType.numberWithOptions(signed: false,decimal: false),
-                                    decoration: const InputDecoration(
+                                    decoration:  InputDecoration(
                                       labelText: 'country code',
-                                      hintText: '+91'
+                                      hintText: '+91',
+                                        focusColor: Color(0xFF27FF91),
+
+                                        hintStyle: TextStyle(color: Colors.white),
+
+                                        labelStyle: TextStyle(color: Colors.white),
+                                        border: UnderlineInputBorder(
+                                          borderRadius: BorderRadius.circular(80),
+                                          borderSide: BorderSide(width: 1, color: Color(0xFF27FF91)),
+
+                                        ),
+
+                                        enabledBorder: UnderlineInputBorder(
+                                            borderSide: BorderSide(color: Colors.white,width: 1)
+                                        )
+
                                     ),
                                   ),
                                 ),
 
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 8.0),
-                                  child: SizedBox(
-                                    width: MediaQuery.of(context).size.width*.7,
-                                    height: 60,
-                                    child: TextFormField(
-                                      controller: mobileNoController,
-                                      validator: (value) {
-                                        if (value
-                                            .trim()
-                                            .length != 10) {
-                                          return 'Enter 10 Digit Mobile Number';
-                                        }
-                                        return null;
-                                      },
-                                      keyboardType: TextInputType.number,
-                                      decoration: const InputDecoration(
-                                        labelText: 'Mobile Number',
-                                      ),
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*.7,
+                                  height: 60,
+                                  child: TextFormField(
+
+                                    style: TextStyle(color: Colors.white),
+                                    controller: mobileNoController,
+                                    validator: (value) {
+                                      if (value
+                                          .trim()
+                                          .length != 10) {
+                                        return 'Enter 10 Digit Mobile Number';
+                                      }
+                                      return null;
+                                    },
+                                    keyboardType: TextInputType.number,
+                                    decoration:  InputDecoration(
+                                      focusColor:  Color(0xFF27FF91),
+                                      labelText: 'Mobile Number',
+                                      labelStyle: TextStyle(color: Colors.white),
+                                        border: UnderlineInputBorder(
+                                          borderRadius: BorderRadius.circular(80),
+                                          borderSide: BorderSide(width: 1, color: Color(0xFF27FF91)),
+
+                                        ),
+
+                                      enabledBorder: UnderlineInputBorder(
+                                        borderSide: BorderSide(color: Colors.white,width: 1)
+                                      )
                                     ),
                                   ),
                                 ),
                               ],
                             ),
-                            TextFormField(
-                              controller: ageController,
-                              validator: (value) {
-                                if (value.isEmpty) {
-                                  return 'Enter Valid Age';
-                                }
-                                return null;
-                              },
-                              keyboardType: TextInputType.number,
-                              decoration: const InputDecoration(
-                                  labelText: 'Age'
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: TextFormField(
+                                style: TextStyle(color: Colors.white),
+
+                                controller: ageController,
+                                validator: (value) {
+                                  if (value.isEmpty) {
+                                    return 'Enter Valid Age';
+                                  }
+                                  return null;
+                                },
+                                keyboardType: TextInputType.number,
+                                decoration:  InputDecoration(
+                                  enabled: true,
+                                  fillColor: Colors.white,
+
+                                    labelText: 'Age',
+                                    focusColor: Color(0xFF27FF91),
+
+                                    hintText: "Age",
+                                    hintStyle: TextStyle(color: Colors.white),
+
+                                    labelStyle: TextStyle(color: Colors.white),
+                                    border: UnderlineInputBorder(
+                                      borderRadius: BorderRadius.circular(80),
+                                      borderSide: BorderSide(width: 1, color: Color(0xFF27FF91)),
+
+                                    ),
+
+                                    enabledBorder: UnderlineInputBorder(
+                                        borderSide: BorderSide(color: Colors.white,width: 1)
+                                    )
+                                ),
                               ),
                             ),
                           ],
@@ -223,9 +311,13 @@ class _ContactFormState extends State<ContactForm> {
                   Row(
                     children: [
                       Material(
+                        color: Colors.black,
                         child: Checkbox(
-                          checkColor: Colors.white,
-                          activeColor: Colors.black,
+                          focusColor: Colors.white,
+                          overlayColor:MaterialStateProperty.resolveWith((states) =>Color(0xFF27FF91)) ,
+                          checkColor: Colors.black,
+                          activeColor: Color(0xFF27FF91),
+
                           value: agree,
                           onChanged: (value) {
                             setState(() {
@@ -239,6 +331,10 @@ class _ContactFormState extends State<ContactForm> {
                           const Text(
                             'I have read and accept ',
                             overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                                color:  Colors.white
+                            ),
+
 
                           ),
                           InkWell(
@@ -246,7 +342,7 @@ class _ContactFormState extends State<ContactForm> {
                               'terms and conditions',
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
-                                color: Colors.blue[800]
+                                color: Color(0xFF27FF91)
                               ),
                             ),
                               onTap: () => launch('https://rosagroups.com/terms-and-conditions-2/')
@@ -261,12 +357,12 @@ class _ContactFormState extends State<ContactForm> {
                       elevation: MaterialStateProperty.all(4),
                       shape: MaterialStateProperty.all(
                           const CircleBorder()),
-                      backgroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.all(Color(0xFF27FF91)),
                       shadowColor: MaterialStateProperty.all(
                           Theme.of(context).colorScheme.onSurface),
                     ),
                     onPressed: agree ? _submitForm() : _alertBox("please agree to our term and conditions"),
-                    child: const Icon(Icons.arrow_forward_outlined,size: 20,color: Colors.white,),
+                    child: const Icon(Icons.arrow_forward_outlined,size: 20,color: Colors.black),
                   ),
                 ],
               ),

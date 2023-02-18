@@ -40,6 +40,8 @@ dependencies:
   http: ^0.13.4
   url_launcher: ^6.0.18
   device_preview: ^1.1.0
+  google_nav_bar: ^5.0.6
+  custom_navigator: ^0.3.0
 
 
 

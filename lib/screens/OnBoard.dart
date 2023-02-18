@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:rosaapp/widgets/bottomSheet.dart';
 
 import '../widgets/contact_form.dart';
@@ -12,15 +13,13 @@ class _OnBoardState extends State<OnBoard> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-
-      child: Scaffold(
+    return Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.black,
-            title: Text("Schedule A Call Back"),
+            title: Text('callback'.tr, style: TextStyle(fontSize: 16),),
           ),
 
-          backgroundColor:Colors.white,
+          backgroundColor:Colors.black,
 
 
           body: SingleChildScrollView(
@@ -47,7 +46,7 @@ class _OnBoardState extends State<OnBoard> {
               ],
             ),
           )
-      ),
+
     );
   }
 }

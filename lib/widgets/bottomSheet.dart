@@ -75,6 +75,7 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.black,
 
 
 
@@ -103,7 +104,7 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Get Estimated Cost",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.white),),
+                      Text('get_price'.tr,style: TextStyle(fontSize: 18,fontWeight: FontWeight.w400,color: Colors.white),),
 
                       IconButton(onPressed:() {
                         Navigator.pop(context);
@@ -117,7 +118,7 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("These are estimated prices we highly recommend you to schedule a call to get proper details about your medical condition"),
+            child: Text('get_price_text'.tr,style: TextStyle(color: Colors.white70),),
           ),
 
           Padding(
@@ -129,18 +130,23 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
                 // Country Dropdown
                 Container(
 
+
+
                   margin: EdgeInsets.only(top: 10,right: 16,bottom: 10),
+
 
                   child: DropdownButton<String>(
 
-                    hint: Text('Please Select A Department'),
+                    hint: Text('Please Select A Department',style: TextStyle(color: Colors.white70),),
                     value: selectedDepartment,
+                    dropdownColor: Colors.black,
                     isExpanded: true,
                     items: departments.map((String value) {
                       return DropdownMenuItem<String>(
 
+
                         value: value,
-                        child: Text(value),
+                        child: Text(value,style: TextStyle(color: Colors.white70),),
                       );
                     }).toList(),
                     onChanged: (department) {
@@ -206,14 +212,16 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
                 Container(
                   margin: EdgeInsets.only(top: 5,right: 16,bottom: 16),
 
+
                   child: DropdownButton<String>(
-                    hint: Text('Treatments'),
+                    dropdownColor: Colors.black,
+                    hint: Text('Treatments',style: TextStyle(color: Colors.white70),),
                     value: selectedTreatment,
                     isExpanded: true,
                     items: treatments.map((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
-                        child: Text(value),
+                        child: Text(value,style: TextStyle(color: Colors.white70),),
                       );
                     }).toList(),
                     onChanged: (treatment) {
@@ -473,7 +481,7 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
                 Container(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(treats, textAlign: TextAlign.start,style: TextStyle(fontSize: 15),),
+                    child: Text(treats, textAlign: TextAlign.start,style: TextStyle(fontSize: 15,color: Colors.white70),),
                   ),
                 ),
 
@@ -486,14 +494,22 @@ class _BottomSheetClassState extends State<BottomSheetClass> {
                             borderRadius: BorderRadius.all(Radius.circular(40)),
                           )
                       ),
-                      backgroundColor: MaterialStateProperty.all(Colors.black),
+                      backgroundColor: MaterialStateProperty.all(Colors.white10),
                     ),
                       onPressed: (){
                       Get.to(OnBoard());
 
                   }, child: Padding(
                     padding: const EdgeInsets.all(20.0),
-                    child: Text("SCHEDULE A PHONE CALL",textAlign: TextAlign.left,),
+                    child: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Icon(Icons.call,color: Color(0xFF27FF91),),
+
+                        Text('callback'.tr,textAlign: TextAlign.left,style: TextStyle(color: Color(0xFF27FF91)),),
+                      ],
+                    ),
                   )),
                 ),
                 //Province Dropdown Ends here

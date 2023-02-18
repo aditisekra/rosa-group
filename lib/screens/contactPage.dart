@@ -22,61 +22,64 @@ class ContactPage extends StatelessWidget {
 
     ];
     return
-      Scaffold(
-      appBar:AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.black,
-        elevation: 5,
+      SafeArea(
 
-        title: const Text("Rosa Groups"),
+        child: Scaffold(
+          backgroundColor: Colors.black,
+        appBar:AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.black,
+          elevation: 5,
 
-      ),
-       body: ListView.builder(
-      itemCount: contactLists.length,
-      itemBuilder: (context,index) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
+          title: const Text("Rosa Groups"),
 
-              borderRadius: BorderRadius.circular(100.0),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+        ),
+         body: ListView.builder(
+        itemCount: contactLists.length,
+        itemBuilder: (context,index) {
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white60,
+
+                borderRadius: BorderRadius.circular(100.0),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
 
 
-                children: [
+                  children: [
 
-                  Padding(
-                    padding: const EdgeInsets.only(left: 30.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
 
-                      children: [
-                        Text(contactLists[index].name,style: TextStyle(fontWeight: FontWeight.bold),),
-                        Text(contactLists[index].location,style: TextStyle(fontWeight: FontWeight.w300,fontSize: 14),),
-                      ],
+                        children: [
+                          Text(contactLists[index].name,style: TextStyle(fontWeight: FontWeight.bold),),
+                          Text(contactLists[index].location,style: TextStyle(fontWeight: FontWeight.w300,fontSize: 14),),
+                        ],
+                      ),
                     ),
-                  ),
-                  Spacer(),
+                    Spacer(),
 
 
-                  IconButton(onPressed: () => {_launchURL('https://wa.me/${contactLists[index].number}')}, icon:Icon(RosaIcons.whatsapp),color: Colors.green),
+                    IconButton(onPressed: () => {_launchURL('https://wa.me/${contactLists[index].number}')}, icon:Icon(RosaIcons.whatsapp),color: Colors.black),
 
-                  IconButton(onPressed: () => {launch("tel://${contactLists[index].number}")}, icon:Icon(Icons.call)),
+                    IconButton(onPressed: () => {launch("tel://${contactLists[index].number}")}, icon:Icon(Icons.call)),
 
 
-                ],
+                  ],
+                ),
               ),
             ),
-          ),
-        );
-      }
+          );
+        }
     )
-    );
+    ),);
     }
   }
 _launchURL( String  _url) async {

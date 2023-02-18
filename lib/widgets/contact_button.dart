@@ -25,11 +25,12 @@ class RosaButton extends StatelessWidget {
       }),
     );
     return SpeedDial(
-      animatedIcon: AnimatedIcons.add_event,
+      animatedIcon: AnimatedIcons.menu_close,
       // label: Text('contact'.tr),
       animatedIconTheme: const IconThemeData(size: 28.0),
       overlayColor: Colors.black38.withOpacity(0.2),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.black12,
+      foregroundColor: Color(0xFF27FF91),
       visible: true,
       curve: Curves.bounceInOut,
       children: [
@@ -55,12 +56,12 @@ class RosaButton extends StatelessWidget {
 
 
         ),
-        SpeedDialChild(
-            child: const Icon(RosaIcons.whatsapp, color: Colors.white),
-            backgroundColor: Colors.black,
-            onTap: () => {_launchURL('https://wa.me/message/XLGMG3AP5J42E1')}
-
-        ),
+        // SpeedDialChild(
+        //     child: const Icon(RosaIcons.whatsapp, color: Colors.white),
+        //     backgroundColor: Colors.black,
+        //     onTap: () => {_launchURL('https://wa.me/message/XLGMG3AP5J42E1')}
+        //
+        // ),
         SpeedDialChild(
             child: const Icon(RosaIcons.mail, color: Colors.white),
             backgroundColor: Colors.black,
