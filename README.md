@@ -5,7 +5,7 @@ this project was developed for an rosagroup
 it is a business portfolio app with local speardsheet based database to collect potential client details without adding addtional cost of server or database
 
 this app does have getx internationalization and have english and french as two local languages.
-
+a medical business portfolio
 
 ![IMAGE 2022-03-21 22:57:30](https://user-images.githubusercontent.com/60619755/159330036-a8768b80-95d5-4e59-8076-3e711a581e43.jpg)
 ![IMAGE 2022-03-21 22:57:41](https://user-images.githubusercontent.com/60619755/159330077-1b4e8b47-d11c-4573-b943-57d201aa015e.jpg)
